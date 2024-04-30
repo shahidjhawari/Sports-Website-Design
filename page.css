@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+    .writer-image img {
+        width: 100px;
+    }
+}

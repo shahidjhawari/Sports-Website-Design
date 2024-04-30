@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for header */
+
+.logoimg {
+    width: 10%;
+}
+.container-fluid {
+    background-color: rgb(255, 255, 255);
+}
+@media (max-width: 768px) {
+    .logoimg {
+        width: 25%;
+    }
+}
+
+
+
+/* Article Writer Introduction Section */
+.article-writer {
+    padding: 20px 0;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.article-writer .container {
+    display: flex;
+    align-items: center;
+}
+
+.writer-info {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.writer-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.writer-details h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.writer-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .writer-details p {
+        font-size: 13px;
+    }
+    .writer-details h3 { 
+        font-size: 17px;
+    }
+}
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust based on your design */
+    /* Adjust the gap between items */
+    margin: 10px 20px;
+}
+
+.grid-container a {
+    background-color: #dbd9d9;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    border-top: solid 1px white;
+    border-left:  solid 1px white;
+}
+@media (max-width: 768px) {
+    .grid-container a {
+        padding: 8px;
+    }
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        margin: 0 20px;
+         /* Adjust based on your design */
+    }
+}
+
+
+
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .article-writer .container {
+        flex-direction: column;
+    }
+}
+
+/* Add slider animation or functionality using JavaScript */
+
+.info {
+    display: flex;
+    gap: 15px;
+}
+
+#carouselExampleControlsNoTouching {
+    margin: 5px 20px;   
+}
+.carousel-item img {
+    border-radius: 8px;
+}
+
+/* Category Heading Styles */
+.category-heading {
+    background-color: #F4F4F4;
+    color: #000000;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.category-heading h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+
+/* 3 by 3 Grid Box Section Styles */
+.grid-box {
+    padding: 20px 0;
+}
+
+.grid-box .container-article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item a {
+    color: #333;
+    text-decoration: none;
+    display: block; /* Ensures the entire grid item is clickable */
+}
+
+.grid-item img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.grid-item h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.grid-item p {
+    margin: 5px 0;
+}
+
+.posting-date {
+    font-style: italic;
+    color: #888;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .grid-box .container-article {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #ccc;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .footer-section {
+        flex-basis: 100%;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+
+
+
+/* contact us */
+
+.container-contact {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="email"],
+textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.sub {
+    background-color: #157294;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+

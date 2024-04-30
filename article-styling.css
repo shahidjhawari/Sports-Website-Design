@@ -1,0 +1,44 @@
+
+/* Article Styling */
+.article-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px 20px;
+    border-radius: 5px;
+  }
+  
+  .article-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .article-content {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .article-details {
+    margin-top: 20px;
+    font-style: italic;
+  }
+  
+  .writer-name,
+  .posting-date {
+    margin-bottom: 5px;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .article-box {
+      padding: 15px;
+    }
+    
+    .article-heading {
+      font-size: 20px;
+    }
+    
+    .article-content {
+      font-size: 14px;
+    }
+  }
+  
