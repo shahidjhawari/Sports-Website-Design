@@ -64,39 +64,43 @@
 
 
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-sections">
-                <div class="footer-section">
-                    <p>&copy; 2024 Your Website. All rights reserved.</p>
-                    
-                    <h3>About Us</h3>
-                    <ul>
-                        <li><a href="#">Politics</a></li>
-                        <li><a href="#">Economy</a></li>
-                        <li><a href="#">Technology</a></li>
-                        <li><a href="#">Health</a></li>
-                    </ul>
-                </div>
-               
-             
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p>Email: info@example.com</p>
-                    <p>Phone: +1234567890</p>
-                </div>
-    
-                <div class="footer-section">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
-    </html>
+      <div class="container">
+          <div class="footer-sections">
+              <div class="footer-section">
+                  <h3>Contact Us</h3>
+                  <p>Email: info@example.com</p>
+                  <p>Phone: +923008194871</p>
+              </div>
+
+              <div class="footer-section">
+                  <h3>Follow Us</h3>
+                  <ul>
+                      <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <p>&copy;2019 - 2024 Good Sports. All rights reserved.</p>
+                  <h3>About Us</h3>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+      var today = new Date();
+
+      var monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+      var monthName = monthsOfYear[today.getMonth()]; // Get the month name
+      var day = today.getDate();
+      var year = today.getFullYear();
+
+      var formattedDate = day + '  ' + monthName + ',  ' + year;
+
+      document.getElementById('date').textContent = formattedDate;
+  </script>
+</body>
+</html>
